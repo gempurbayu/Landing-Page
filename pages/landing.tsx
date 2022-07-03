@@ -29,11 +29,17 @@ export default function landing() {
             </div>
             <div className="right-section w-5/12 h-full flex flex-col pt-12 pl-12">
               <Image src={WeatherIcon} width={500} height={500} className="justify-items-center z-10" />
-              <div className="temperatur flex flex-row -mt-16 w-full text-center justify-center pl-12">
-                <h2 className="text-[180px] font-semibold text-white opacity-95 text-center leading-none">32</h2>
-                <span className="text-6xl pt-5 text-white font-semibold opacity-95">°</span>
+              <div className="desc flex flex-row">
+                <div className="temperatur flex flex-row -mt-16 w-full text-center pl-12 w-6/12">
+                  <h2 className="text-[180px] font-semibold text-white opacity-95 text-center leading-none">32</h2>
+                  <span className="text-6xl pt-5 text-white font-semibold opacity-95 animate-bounce">°</span>
+                </div>
+                <div className="detail text-left -ml-8 -mt-8">
+                  <h4 className="text-4xl text-white pl-10 pb-2 font-bold">Bandung City</h4>
+                  <h4 className="text-2xl text-white pl-10 pb-2">Cloudy</h4>
+                  <h4 className="text-2xl text-white pl-10 font-semibold">Monday, 5 July</h4>
+                </div>
               </div>
-              <h4 className="text-center text-4xl text-white pl-10">Cloudy</h4>
             </div>
           </div>
         </div>
